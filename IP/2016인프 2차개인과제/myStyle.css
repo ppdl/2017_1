@@ -1,0 +1,28 @@
+/*external css-style sheet for my web page*/
+/*2013147561 Song Chi Heon*/
+@media all
+{
+	h1	{font-family: helvetica, sans-serif; color:teal;
+		 text-shadow: 10px 10px 10px dimgrey;}/*텍스트 쉐도우를 사용했습니다.*/
+	h2	{font-family: helvetica, sans-serif; color:navy;
+		 text-shadow: 10px 10px 10px dimgrey;}	/*텍스트 쉐도우를 사용했습니다.*/
+	p	{font-family: tahoma, helvetica, sans-serif; font-size: 11pt; color: gray;}
+	ul	{margin-left : 20px;}
+	ul ol {font-size: .8em; font-style: italic;}
+	ul li	{font-size: 14pt; color:black; font-family: tahoma, helvetica;}
+	a:hover	{text-decoration: underline; color: red; background-color: gray;}
+
+}
+/*font-size, font-family, font-style사용*/
+/*End of media_general*/
+
+@media print
+{
+	body	{background-color: white;}
+	h1		{font-family: helvetica, sans-serif; color: seagreen;}
+	h2		{font-family: helvetica, sans-serif; color: blue;}
+	p		{font-family: "times new roman", times, serif; font-size: 12pt; color: gray;}
+	
+}/*End of media print*/
+
+

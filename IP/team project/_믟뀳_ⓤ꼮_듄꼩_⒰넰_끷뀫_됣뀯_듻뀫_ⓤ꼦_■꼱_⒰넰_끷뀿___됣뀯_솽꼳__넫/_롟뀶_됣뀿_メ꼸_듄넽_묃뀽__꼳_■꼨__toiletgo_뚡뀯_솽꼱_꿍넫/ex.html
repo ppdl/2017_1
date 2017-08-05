@@ -1,0 +1,165 @@
+<!DOCUMENT html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+	<title>쾌변 고!</title>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/slide-menu.css" />
+	<link rel="stylesheet" type="text/css" href="css/default.css" />
+	<link rel="stylesheet" type="text/css" href="css/home.css" />
+	<link rel="stylesheet" type="text/css" href="css/ex.css" />
+
+
+	<style type="text/css">
+		#cont{
+			max-width: 700px;
+			margin-right: auto;
+			margin-left: auto;
+		}
+		
+	</style>
+</head>
+<body>
+	<div id="header" class="reveal-header">
+		<a href="index.html"><img id="logo" src="img/로고.png" /></a>		
+	</div>
+	<div id="search-wrap">
+		<form method="post" action="result.php">
+			<input type="search" name="addr" required="required"/>
+			<input type="image" src="img/search.png" width= "40" height="40" />
+			<img src="img/gps.png" id="gps" width="40" height="40" name="coord"  title="내 위치로 찾기"/>
+		</form>
+	</div>
+	<div id="mobile-nav"></div>
+	<nav class="reveal-nav">
+      <ul class="menu">
+        <li><a href="login.html">Login</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">PC version</a></li>
+	  </ul>
+	</nav>
+	
+	<!-- 대표사진과 화장실정보 -->
+	<a href="board.html">
+	<div class="main_info">
+		<div class="main_pic row">
+			<div class ="col-xs-5">
+				<img src="img/default_thumb.jpeg"/>
+			</div>
+			<div class="toilet_info col-xs-7">
+				<h5>스팀슨관</h5>
+				<h4>1층 남자화장실</h4>
+				<div class="star">					
+					<img src="img/2.png" height="40px">
+				</div>
+			</div>
+		</div>
+	</div>
+	</a>
+
+	<!-- 대표사진과 화장실정보 -->
+	<a href="board.html">
+	<div class="main_info">
+		<div class="main_pic row">
+			<div class ="col-xs-5">
+				<img src="img/default_thumb2.jpeg"/>
+			</div>
+			<div class="toilet_info col-xs-7">
+				<h5>공학관B</h5>
+				<h4>1층 남자화장실</h4>
+				<div class="star">					
+					<img src="img/4.png" width="30px" height="40px">
+				</div>
+			</div>
+		</div>
+	</div>
+	</a>
+
+	<!-- 대표사진과 화장실정보 -->
+	<a href="board.html">
+	<div class="main_info">
+		<div class="main_pic row">
+			<div class ="col-xs-5">
+				<img src="img/default_thumb3.jpeg"/>
+			</div>
+			<div class="toilet_info col-xs-7">
+				<h5>중도</h5>
+				<h4>6층 여자화장실</h4>
+				<div class="star">					
+					<img src="img/5.png" width="30px" height="40px">
+				</div>
+			</div>
+		</div>
+	</div>
+	</a>
+
+	<div id = "write">
+		<a href="write.html">
+			<button type="button" class="btn btn-info btn-block">
+				화장실 추가하기
+			</button>
+		</a>
+	</div>
+
+	<!-- <div id = "cont">
+		<div class = "row">
+			<div class="col-xs-12">
+				<p>1층 남자 화장실</p>
+			</div>
+		</div>
+
+		<div class = "row">
+			<div class ="col-xs-6">
+				<img src="default_thumb.jpg"/>
+			</div>
+
+			<div class ="col-xs-6">
+				닉네임32312
+			</div>
+			<div class = "col-xs-6">
+				몇글자 들어가나 실험해보자
+			</div>
+			<div class = "col-xs-6">
+				<br>
+			</div>
+			<div class = "col-xs-6">
+				닉네임132311
+			</div>
+			<div class = "col-xs-6">
+				일이삼사오육칠팔구공일이삼사오육칠팔구공일이삼사오육칠팔구공...
+			</div>
+			<div class = "col-xs-6">
+				<br>
+			</div>			
+			<div class = "col-xs-6">
+				평점 : 4.4
+			</div>
+			<div class = "col-xs-3">
+				<a href="#">더보기</a>
+			</div>
+			<div class = "col-xs-3">
+				<a href="#">리뷰쓰기</a>
+			</div>
+		</div>	
+		<div class = "row">
+			<div class = "col-xs-3">
+			</div>
+			<div class = "col-xs-6">
+				<a href="create_review.php?part=2">화장실추가</a>
+			</div>
+			<div class = "col-xs-3">
+			</div>
+		</div>
+	</div> -->
+
+	<footer>
+		<p>&copy; 급하니</p>
+	</footer>
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="js/slide-menu.js"></script>
+</body>
+</html>

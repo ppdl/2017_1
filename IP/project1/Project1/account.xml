@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+	<account>
+		<id>4Nuri1205</id>
+		<password>a</password>
+		<visited>1</visited>
+	</account>
+	<account>
+		<id>b</id>
+		<password>a</password>
+		<visited>2</visited>
+	</account>
+	<account>
+		<id>c</id>
+		<password>a</password>
+		<visited>3</visited>
+	</account>
+</database>

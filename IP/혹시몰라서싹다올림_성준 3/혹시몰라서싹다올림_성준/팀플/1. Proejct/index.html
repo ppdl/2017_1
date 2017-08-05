@@ -1,0 +1,60 @@
+<!DOCUMENT html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+	<title>쾌변 고!</title>
+	<link rel="stylesheet" type="text/css" href="css/slide-menu.css" />
+	<link rel="stylesheet" type="text/css" href="css/default.css" />
+	<link rel="stylesheet" type="text/css" href="css/home.css" />
+	<style>
+		button {
+			background-color: none;
+		}
+	</style>
+</head>
+<body>
+	<div id="header" class="reveal-header">
+		<a href="index.html"><img id="logo" src="img/로고.png" /></a>
+	</div>
+	<div id="search-wrap">
+		<form method="post" action="result.php">
+			<input type="search" name="addr" required="required"/>
+			<input type="image" src="img/search.png" width= "40" height="40" />
+			<img src="img/gps.png" id="gps" width="40" height="40" name="coord"  title="내 위치로 찾기"/>
+		</form>
+	</div>
+	<div id="mobile-nav"></div>
+	<nav class="reveal-nav">
+      <ul class="menu">
+        <li><a href="login.html">Login</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">PC version</a></li>
+	  </ul>
+	</nav>
+	<div id="game">
+		<h4><a href="toiletGo_web/toiletGo_web.html">게임하러 가기!-test ver</a></h2>
+	</div>
+	<div id="content" class="reveal-contents">
+		<ul>게시글
+			<li>title1</li>
+			<li>title2</li>
+			<li>title3</li>
+			<li>title4</li>
+		</ul>
+		<ul>순위
+			<li>1위</li>
+			<li>2위</li>
+			<li>3위</li>
+			<li>4위</li>
+		</ul>
+	</div>
+	<footer>
+		<p>&copy; 급하니</p>
+	</footer>
+	<!-- <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script> -->
+	<script src="js/slide-menu.js"></script>
+	<script type="text/javascript" language="javascript" src="js/gps.js"></script> <!-- 첫 시작화면에서만 쓰는 geolocation api 가능 여부 알려주는 함수들 모음 -->
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCUMENT html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+	<title>쾌변 고!</title>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">		
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/slide-menu.css" />
+	<link rel="stylesheet" type="text/css" href="css/default.css" />
+	<link rel="stylesheet" type="text/css" href="css/home.css" />
+	<link rel="stylesheet" href="css/board.css">
+</head>
+<body>
+	<div id="header" class="reveal-header">		
+		<a href="index.html"><img id="logo" src="img/로고.png" width="200px" height="80px" /></a>
+		<a href="ex.html"><img id="back" src="img/backbtn.png" width="40px" /></a>
+	</div>
+	<div id="search-wrap">
+		<form method="post" action="result.php">
+			<input type="search" name="addr" required="required"/>
+			<input type="image" src="img/search.png" width= "40" height="40" />
+			<img src="img/gps.png" id="gps" width="40" height="40" name="coord"  title="내 위치로 찾기"/>
+		</form>
+	</div>
+	<div id="mobile-nav"></div>
+	<nav class="reveal-nav">
+      <ul class="menu">
+        <li><a href="#">Login</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="board.php">Board</a></li>
+        <li><a href="#">PC version</a></li>
+	  </ul>
+	</nav>
+	<!-- 대표사진과 화장실정보 -->
+	<div id="main_info">
+		<div id="main_pic" class = "row">
+			<div class ="col-xs-5">
+				<img src="img/default_thumb.jpeg"/>
+			</div>
+			<div id="toilet_info" class = "col-xs-7">
+				<h5>스팀슨관</h5>
+				<h4>1층 남자화장실</h4>
+			</div>
+		</div>
+	</div>
+
+	<!--
+	글내용	별점
+
+			추천 		댓글 -->
+	<div id="container">
+		<!-- ******************************** -->
+		<a href="ex2.html">
+		<div class="element">
+			<div class = "row">
+				<div class ="writer col-xs-6">
+					이경호
+				</div>
+				<div class = "date col-xs-6">
+					2016-06-02 00:43
+				</div>
+			</div>
+	
+			<div class ="text">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</div>				
+		
+			<div class = "row">
+				<div class = "col-xs-6">
+					평점
+				</div>
+				<div class = "col-xs-3">
+					추천수
+				</div>
+				<div class = "col-xs-3">
+					댓글수
+				</div>
+			</div>	
+		</div>	
+		</a>
+		<!-- ******************************** -->
+		<div class="element">
+			<div class = "row">
+				<div class ="writer col-xs-6">
+					이경호
+				</div>
+				<div class = "date col-xs-6">
+					2016-06-02 00:43
+				</div>
+			</div>
+	
+			<div class ="text">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</div>				
+		
+			<div class = "row">
+				<div class = "col-xs-6">
+					평점
+				</div>
+				<div class = "col-xs-3">
+					추천수
+				</div>
+				<div class = "col-xs-3">
+					댓글수
+				</div>
+			</div>	
+		</div>	
+		<!-- ******************************** -->
+		<div class="element">
+			<div class = "row">
+				<div class ="writer col-xs-6">
+					이경호
+				</div>
+				<div class = "date col-xs-6">
+					2016-06-02 00:43
+				</div>
+			</div>
+	
+			<div class ="text">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</div>				
+		
+			<div class = "row">
+				<div class = "col-xs-6">
+					평점
+				</div>
+				<div class = "col-xs-3">
+					추천수
+				</div>
+				<div class = "col-xs-3">
+					댓글수
+				</div>
+			</div>	
+		</div>	
+		<!-- ******************************** -->
+	</div>
+
+	<div id = "write">
+		<a href="write.html">
+			<button type="button" class="btn btn-info btn-block">
+				리뷰 쓰기
+			</button>
+		</a>			
+	</div>
+
+	<footer> <!-- footer -->
+		<p>&copy; 급하니</p>
+	</footer>
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="js/slide-menu.js"></script>
+
+</body>
+</html>

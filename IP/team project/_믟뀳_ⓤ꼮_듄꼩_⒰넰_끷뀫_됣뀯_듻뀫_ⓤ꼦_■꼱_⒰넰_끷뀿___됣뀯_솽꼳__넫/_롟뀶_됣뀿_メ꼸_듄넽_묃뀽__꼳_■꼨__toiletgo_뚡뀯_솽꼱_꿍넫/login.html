@@ -1,0 +1,58 @@
+<!-- 작성자: 서성준;
+작성일: 2016.5.18(수) 최초 작성
+html용도: 사용자 로그인 페이지의 html. -->
+
+<!DOCUMENT html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+	<title>사용자 로그인</title>
+	<link rel="stylesheet" type="text/css" href="css/slide-menu.css" />
+	<link rel="stylesheet" type="text/css" href="css/default.css" />
+	<link rel="stylesheet" type="text/css" href="css/footer.css" />	
+	<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+	<script type="text/javascript">
+		function cngtype(){
+		    if($("#pswd).val() == "비밀번호"" {
+		        $("#pswd).val("");
+		        $("#pswd).attr("type", "password"); //-- input type 속성을 text에서 password로 변경한다.
+		    }
+		}
+	</script>
+	
+</head>
+<body>
+	<div id="header" class="reveal-header">
+		<a href="index.html"><img id="logo" src="img/로고.png" /></a>
+	</div>
+	<div id="mobile-nav"></div>
+	<nav class="reveal-nav">
+      <ul class="menu">
+        <li><a href="login.html">Login</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">PC version</a></li>
+	  </ul>
+	</nav>
+	<!-- Login User Input Side -->
+	<div id="login-header">
+		<p>로그인</p>
+	</div>
+	<div id="login-ID-wrap">
+		<input type="text" name="loginId" id="loginId" value="아이디">
+	</div>
+	<div id="login-header">
+		<p>비밀번호</p>
+	</div>
+	<div id="login-PW-wrap">
+		<input type="password" name="loginPW" id="loginPW" value="비밀번호" onfocus="cngtype()">
+	</div>
+	<footer>
+		<p>Copyright &copy; Team 급하니. All rights reserved. </p>
+	</footer>
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="js/slide-menu.js"></script>
+
+</body>
+</html>

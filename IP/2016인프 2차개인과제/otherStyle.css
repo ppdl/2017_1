@@ -1,0 +1,27 @@
+/*style sheet for other web pages.*/
+/*2013147561 Song Chi Heon*/
+@media all
+{
+	h1	{font-family: helvetica, sans-serif; color: Navy;}
+	h2	{font-family: helvetica, sans-serif; color: purple;}
+	p	{font-family: tahoma, helvetica, sans-serif; font-size: 12pt; color: gray;}
+	ul li	{font-family: fantasy, tahoma, sans-serif; color: navy; font-size: .8em;}
+	ol li	{font-family: sans-serif, tahoma, fantasy; color: teal; font-size: .9em;}
+	em {font-family: helvetica, sans-serif; color: green; font-size: .8em;}
+	a:hover	{text-decoration: underline; color: olive; background-color: white;}/*텍스트 데코레이션 속성!*/
+	body	{background-color: #EEEEEE;	}/*백그라운드 컬러 있습니다.*/
+	header	{border : 1px solid skyblue;}
+	footer	{border : 1px solid skyblue;}
+	
+}/*End of media_general*/
+/*미디어 쿼리입니다. 평소의 상황일 때를 나타낸 것입니다.*/
+
+@media print
+{
+	body	{background-color: white;}
+	h1		{font-family: helvetica, sans-serif; color: seagreen;}
+	h2		{font-family: helvetica, sans-serif; color: blue;}
+	p		{font-family: "times new roman", times, serif; font-size: 12pt; color: gray;}
+	
+}/*End of media print*/
+/*미디어 쿼리입니다. 프린트를 할 때의 경우를 나타낸 것 입니다.*/

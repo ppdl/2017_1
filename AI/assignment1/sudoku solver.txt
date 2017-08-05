@@ -1,0 +1,110 @@
+def solver(self):
+        # TO DO: need to write solver
+        # Your code goes here...
+        stack1 = []
+        stack2 = []
+        
+        while True:
+            for i in range(9):
+                for j in range(9):
+                    if self.puzzle[i][j]!=0: continue
+                    possibleNum = [1,2,3,4,5,6,7,8,9]
+                    for horizontal in range(9):
+                        if self.puzzle[horizontal][j] != 0:
+                            e1 = self.puzzle[horizontal][j]
+                            #remove a element if the element exists in possibleNum
+                            for p in possibleNum:
+                                if p == e1:
+                                    possibleNum.remove(e1)
+                    for vertical in range(9):
+                        if self.puzzle[i][vertical] != 0:
+                            e2 = self.puzzle[i][vertical]
+                            #remove a element if the element exists in possibleNum
+                            for p in possibleNum:
+                                if p == e2:
+                                    possibleNum.remove(e2)
+                    for square in range(9):
+                        hX = i - i%3
+                        hY = j - j%3
+                        if self.puzzle[hX + int(square/3)][hY + square%3] != 0:
+                            e3 = self.puzzle[hX + int(square/3)][hY + square%3]
+                            #remove a element if the element exists in possibleNum
+                            for p in possibleNum:
+                                if p == e3:
+                                    possibleNum.remove(e3)
+                    stack1+possibleNum
+                    stack2.append(possibleNum.__len__())
+                    
+                                       
+                    
+                #if self.puzzle: terminate condition
+            
+        """This is just an example to call display function
+        print self.problem.display(1, 2, 1)"""
+
+        # Display "Correct" if successfully ended with all correct answers.
+        # Display "Fail" if ended with wrong answer.
+        self.problem.is_done(self.puzzle)
+
+--------------------------------------------------------------------------------------
+
+
+            
+        stack1 = []
+        stack2 = []
+                    
+        idx = 0
+        while idx < len(emptyCell):
+            x = emptyCell[idx][0]
+            y = emptyCell[idx][1]
+            possibleNum = [1,2,3,4,5,6,7,8,9]
+            for horizontal in range(9):
+                if self.puzzle[horizontal][j] != 0:
+                    e1 = self.puzzle[horizontal][j]
+                    for p in possibleNum:
+                        if p == e1:
+                            possibleNum.remove(e1)
+            for vertical in range(9):
+                if self.puzzle[i][vertical] != 0:
+                    e2 = self.puzzle[i][vertical]
+                    for p in possibleNum:
+                        if p == e2:
+                            possibleNum.remove(e2)
+            for square in range(9):
+                hX = i - i%3
+                hY = j - j%3
+                if self.puzzle[hX + int(square/3)][hY + square%3] != 0:
+                    e3 = self.puzzle[hX + int(square/3)][hY + square%3]
+                    #remove a element if the element exists in possibleNum
+                    for p in possibleNum:
+                        if p == e3:
+                            possibleNum.remove(e3)
+
+--------------------------------------------------------------------------------------
+
+def getPossibleNum(i, j):
+            possibleNum = [1,2,3,4,5,6,7,8,9]
+            for horizontal in range(9):
+                if self.puzzle[horizontal][j] != 0:
+                    e1 = self.puzzle[horizontal][j]
+                    #remove a element if the element exists in possibleNum
+                    for p in possibleNum:
+                        if p == e1:
+                            possibleNum.remove(e1)
+            for vertical in range(9):
+                if self.puzzle[i][vertical] != 0:
+                    e2 = self.puzzle[i][vertical]
+                    #remove a element if the element exists in possibleNum
+                    for p in possibleNum:
+                        if p == e2:
+                            possibleNum.remove(e2)
+            for square in range(9):
+                hX = i - i%3
+                hY = j - j%3
+                if self.puzzle[hX + int(square/3)][hY + square%3] != 0:
+                    e3 = self.puzzle[hX + int(square/3)][hY + square%3]
+                    #remove a element if the element exists in possibleNum
+                    for p in possibleNum:
+                        if p == e3:
+                            possibleNum.remove(e3)   
+            return possibleNum        

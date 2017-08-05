@@ -1,0 +1,176 @@
+<!DOCUMENT html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+	<title>쾌변 고!</title>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/slide-menu.css" />
+	<link rel="stylesheet" type="text/css" href="css/default.css" />
+	<link rel="stylesheet" type="text/css" href="css/home.css" />
+	<link rel="stylesheet" type="text/css" href="css/ex2.css" />
+
+	<style type="text/css">
+		#cont {
+			width: 98%;
+			max-width: 780px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		#cont img{
+			width: 98%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+
+	</style>
+</head>
+<body>
+	<div id="header" class="reveal-header">
+		<a href="index.html"><img id="logo" src="img/로고.png" /></a>
+		<a href="board.html"><img id="back" src="img/backbtn.png" width="40px" /></a>
+	</div>
+	<div id="search-wrap">
+		<form method="post" action="result.php">
+			<input type="search" name="addr" required="required"/>
+			<input type="image" src="img/search.png" width= "40" height="40" />
+			<img src="img/gps.png" id="gps" width="40" height="40" name="coord"  title="내 위치로 찾기"/>
+		</form>
+	</div>
+	<div id="mobile-nav"></div>
+	<nav class="reveal-nav">
+      <ul class="menu">
+        <li><a href="login.html">Login</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">PC version</a></li>
+	  </ul>
+	</nav>
+
+	<!-- ******************************** -->
+		
+		<div class="element">
+			<div class = "row">
+				<div class ="writer col-xs-5">
+					<p>서성준</p>
+					<p id="date">2016-06-02 00:43</p>
+				</div>
+				<div class = "pic col-xs-7">					
+					<img src="img/default_thumb.jpeg" />
+				</div>
+			</div>
+	
+			<div class ="text">				
+				<p><hr>
+				연세대학교 중앙도서관 2층 남자화장실 <br>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				<hr></p>
+			</div>				
+		
+			<div class = "row">
+				<div class = "col-xs-6">
+					<img id="star" src="img/5.png" height="40px">
+				</div>
+				<div class = "col-xs-3">
+					추천수 10
+				</div>
+				<div class = "col-xs-3">
+					댓글수 2
+				</div>
+			</div>	
+		</div>	
+		
+
+	<div id="cont">
+		<div class="row">			
+			<form action="comment_create.php" method="post">
+			<!-- 이부분은 뭐하는 부분? -->
+			<div style="display: none">
+				<input type="number" name="reveiw_no" value="$no" />
+			</div>
+			<!-- 이부분은 뭐하는 부분? -->
+			<div class="col-xs-10">
+				<input type="text" name="cmt" required />
+			</div>
+			<div class="col-xs-2"> 
+			<input  type="image" src="img/poo.png" name="submit" value="submit"  align="absmiddle" width="30px">	
+		</div>
+		
+		<div class="row">
+			<hr>
+			<div class="reply col-xs-6">
+				<p>
+					jjune21
+				</p>
+			</div>
+			<div class="reply col-xs-6"> 
+				<p>
+					2016년3월24일 15:48
+				</p>
+			</div>
+			<div class="reply col-xs-12"> 
+				<p>
+					여기 화장실 진짜 깨끗하고 좋습니다 ㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎ
+				</p>
+			</div>
+			<hr>
+		</div>
+
+		<div class="row">
+			<hr>
+			<div class="reply col-xs-6">
+				<p>
+					jjune21
+				</p>
+			</div>
+			<div class="reply col-xs-6"> 
+				<p>
+					2016년3월24일 15:48
+				</p>
+			</div>
+			<div class="reply col-xs-12"> 
+				<p>
+					여기 화장실 진짜 깨끗하고 좋습니다 ㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎ
+				</p>
+			</div>
+			<hr>
+		</div>
+
+		<div class="row">
+			<hr>
+			<div class="reply col-xs-6">
+				<p>
+					jjune21
+				</p>
+			</div>
+			<div class="reply col-xs-6"> 
+				<p>
+					2016년3월24일 15:48
+				</p>
+			</div>
+			<div class="reply col-xs-12"> 
+				<p>
+					여기 화장실 진짜 깨끗하고 좋습니다 ㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎ
+				</p>
+			</div>
+			<hr>
+		</div>
+	</div>
+
+
+	<footer>
+		<p>&copy; 급하니</p>
+	</footer>
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="js/slide-menu.js"></script>
+
+</body>
+</html>

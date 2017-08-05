@@ -1,0 +1,13 @@
+<?php
+   	session_start();  
+	unset($_SESSION['no']);
+	unset($_SESSION['id']);
+	unset($_SESSION['name']);
+    unset($_SESSION['facebook']);
+    unset($_SESSION['fbtoken']);
+    unset($_SESSION['state']);
+    unset($_SESSION['score']);
+    unset($_SESSION['sta']);
+    unset($_SESSION['nick']);
+    header("location:http://127.0.0.1/toiletGo/index.php");
+?>

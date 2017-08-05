@@ -1,0 +1,75 @@
+average:368
+매 칸의 윗열에 있는 숫자들의 경우에 checker함수를 부르지 않음
+
+for i in range(1,10):
+            for k in range(1,10):
+                if self.problem.checker(1,i,k) == 1:
+                    self.puzzle[0][i-1] = k
+                    break
+        
+        for i in range(2,10):
+            for j in range(1,10):
+                for idx in range(i-1):
+                    existNum = []
+                    existNum.append(self.puzzle[idx][j-1])                    
+                for k in range(1,10):
+                    if k in existNum:
+                        continue
+                    if self.problem.checker(i,j,k) == 1:
+                        self.puzzle[i-1][j-1] = k
+                        break
+
+
+-------------------------------------------------------------------------
+-------------------------------------------------------------------------
+average:159
+매칸의 행, 열에 있는 숫자들의 경우에 checker함수를 부르지 않음
+
+self.puzzle = [[0] * 9 for _ in range(9)]
+        vlst = [[] for _ in range(9)]
+        hlst = []
+        
+        for i in range(1,10):
+            hlst = []
+            for j in range(1,10):
+                for k in range(1,10):
+                    if k in vlst[j-1]:
+                        continue
+                    elif k in hlst:
+                        continue
+                    else:
+                        if self.problem.checker(i,j,k) == 1:
+                            self.puzzle[i-1][j-1] = k
+                            vlst[j-1].append(k)
+                            hlst.append(k)
+                            break
+
+
+-------------------------------------------------------------------------
+-------------------------------------------------------------------------
+average:138
+매칸의 행, 열, 정사각형안에 있는 숫자들의 경우에 checker함수를 부르지 않음
+
+vlst = [[] for _ in range(9)]
+hlst = []
+qlst = [[] for _ in range(9)]
+
+for i in range(1,10):
+    hlst = []
+    for j in range(1,10):
+        for k in range(1,10):
+            hx = (i-1) - (i-1)%3
+            hy = (j-1) - (j-1)%3
+            if k in vlst[j-1]:
+                continue
+            elif k in hlst:
+                continue
+            elif k in qlst[hx + int(hy/3)]:
+                continue
+            else:
+                if self.problem.checker(i,j,k) == 1:
+                    self.puzzle[i-1][j-1] = k
+                    vlst[j-1].append(k)
+                    hlst.append(k)
+                    qlst[hx + int(hy/3)].append(k)
+                    break
